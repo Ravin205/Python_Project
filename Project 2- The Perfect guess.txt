@@ -1,0 +1,34 @@
+'''
+
+Program that generates a random number and asks the user to guess it.
+If Player guess is higher than the actual number,the program displays "Enter a Smaller Numner".
+Similarly if the user's guess is too low, the program displays "Enter a Larger Number".
+When user guesses the correct number, the program displays the number of guesses that Player
+used to arrive at the number
+
+
+'''
+
+import random
+randomNumber=random.randint(1,100)
+userGuess=None
+guess=0
+
+
+while (userGuess != randomNumber):
+    userGuess = input("Enter Your guess:\n")
+    try:
+        userGuess=int(userGuess)
+        guess +=1
+        if (userGuess==randomNumber):
+            print("You guessed it right!")
+        else:
+            if (userGuess > randomNumber):
+                print("Wrong guess! Enter a Smaller Number\n")
+            else:
+                print("Wrong guess! Enter a Larger Number\n")
+    except:
+        print("Please give a valid input\n")
+print("you guessed the number in " + str(guess) + " guesses")
+
+
