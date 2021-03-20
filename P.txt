@@ -1,1 +1,1 @@
-score=lambda num : num * num
+
