@@ -1,6 +1,9 @@
-""" This is a project using pyhton and this project
-    is a game based project
-"""
+'''
+This is Snake, Water, Gun Game
+Where You can choose "w" for Water
+"s" for Snake and "g" for Gun
+'''
+
 import random
 def gamewin(comp,you):
     if comp==you:
