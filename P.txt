@@ -1,1 +1,60 @@
+'''
+This is Snake, Water, Gun Game
+Where You can choose "w" for Water
+"s" for Snake and "g" for Gun
+'''
+
+import random
+def gamewin(comp,you):
+    if comp==you:
+        return 1
+    elif comp=='s':
+        if you=='w':
+            return False
+        elif you=='g':
+            return True
+        else:
+            return None
+    elif comp=='w':
+        if you=='g':
+            return False
+        elif you=='s':
+            return True
+        else:
+            return None
+    elif comp=='g':
+        if you=='s':
+            return False
+        elif you=='w':
+            return True
+        else:
+            return None
+            
+# Here Computer take a Value 
+
+randNo=random.randint(1,3)
+if randNo==1:
+    comp='s'
+elif randNo==2:
+    comp='w'
+elif randNo==3:
+    comp='g'
+print("computer choosed a value in s,w,or g")
+
+# Here you can Take a value
+
+you=input("Your Turn: snake(s) water(w) or gun(g)?\n")
+
+a=gamewin(comp,you)
+print("you choose",you)
+print("computer choose",comp)
+
+if a==1:
+    print("The game tie")
+elif a:
+    print("You Win!")
+elif a==None:
+    print("Invalid Input: You should choose snake(s) water(w) or gun(g)")
+else:
+    print("You Lose!")
 
