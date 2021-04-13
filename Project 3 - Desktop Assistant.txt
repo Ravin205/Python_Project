@@ -1,5 +1,5 @@
 '''
-This Program as a Desktop Assistant where user can open Google.Com,Youtube,Stackoverflow,Wikipedia,
+This Program as a Desktop Assistant where user can open Google,Youtube,Stackoverflow,Wikipedia,
 Play Music,Open Your VS code, Sent Email. User give a command to  the Desktop Assistant for task which are given.
 
 '''
